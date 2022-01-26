@@ -1,0 +1,264 @@
+Simulator report for Lab3_1_qsim
+Wed Nov 03 13:47:40 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 us       ;
+; Simulation Netlist Size     ; 61 nodes     ;
+; Simulation Coverage         ;      21.67 % ;
+; Total Number of Transitions ; 398          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                            ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                          ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                       ; Timing        ;
+; Start time                                                                                 ; 0 ns                                             ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                              ;               ;
+; Vector input source                                                                        ; H:/wrash014/QUARTUS CEG2536/Lab 3_1/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                               ; On            ;
+; Check outputs                                                                              ; Off                                              ; Off           ;
+; Report simulation coverage                                                                 ; On                                               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                               ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                               ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                               ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                              ; Off           ;
+; Detect glitches                                                                            ; Off                                              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                              ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                             ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                        ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                        ; Transport     ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      21.67 % ;
+; Total nodes checked                                 ; 61           ;
+; Total output ports checked                          ; 60           ;
+; Total output ports with complete 1/0-value coverage ; 13           ;
+; Total output ports with no 1/0-value coverage       ; 40           ;
+; Total output ports with no 1-value coverage         ; 41           ;
+; Total output ports with no 0-value coverage         ; 46           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                    ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; |Lab3top|CLK                                         ; |Lab3top|CLK                                         ; out              ;
+; |Lab3top|input_generator_high_freq:inst10|count~0    ; |Lab3top|input_generator_high_freq:inst10|count~0    ; out              ;
+; |Lab3top|input_generator_high_freq:inst10|count~1    ; |Lab3top|input_generator_high_freq:inst10|count~1    ; out              ;
+; |Lab3top|input_generator_high_freq:inst10|count~2    ; |Lab3top|input_generator_high_freq:inst10|count~2    ; out              ;
+; |Lab3top|input_generator_high_freq:inst10|count[2]   ; |Lab3top|input_generator_high_freq:inst10|count[2]   ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|count[1]   ; |Lab3top|input_generator_high_freq:inst10|count[1]   ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|count[0]   ; |Lab3top|input_generator_high_freq:inst10|count[0]   ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state~0 ; |Lab3top|input_generator_high_freq:inst10|pr_state~0 ; out0             ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state~4 ; |Lab3top|input_generator_high_freq:inst10|pr_state~4 ; out0             ;
+; |Lab3top|input_generator_high_freq:inst10|Add0~0     ; |Lab3top|input_generator_high_freq:inst10|Add0~0     ; out0             ;
+; |Lab3top|input_generator_high_freq:inst10|Add0~1     ; |Lab3top|input_generator_high_freq:inst10|Add0~1     ; out0             ;
+; |Lab3top|input_generator_high_freq:inst10|Add0~2     ; |Lab3top|input_generator_high_freq:inst10|Add0~2     ; out0             ;
+; |Lab3top|input_generator_high_freq:inst10|Equal0~0   ; |Lab3top|input_generator_high_freq:inst10|Equal0~0   ; out0             ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                   ;
++------------------------------------------------------------+------------------------------------------------------------+------------------+
+; Node Name                                                  ; Output Port Name                                           ; Output Port Type ;
++------------------------------------------------------------+------------------------------------------------------------+------------------+
+; |Lab3top|Z                                                 ; |Lab3top|Z                                                 ; pin_out          ;
+; |Lab3top|S                                                 ; |Lab3top|S                                                 ; pin_out          ;
+; |Lab3top|V                                                 ; |Lab3top|V                                                 ; pin_out          ;
+; |Lab3top|C                                                 ; |Lab3top|C                                                 ; pin_out          ;
+; |Lab3top|C3                                                ; |Lab3top|C3                                                ; pin_out          ;
+; |Lab3top|S0                                                ; |Lab3top|S0                                                ; pin_out          ;
+; |Lab3top|S1                                                ; |Lab3top|S1                                                ; pin_out          ;
+; |Lab3top|S2                                                ; |Lab3top|S2                                                ; pin_out          ;
+; |Lab3top|S3                                                ; |Lab3top|S3                                                ; pin_out          ;
+; |Lab3top|A0                                                ; |Lab3top|A0                                                ; pin_out          ;
+; |Lab3top|A1                                                ; |Lab3top|A1                                                ; pin_out          ;
+; |Lab3top|A2                                                ; |Lab3top|A2                                                ; pin_out          ;
+; |Lab3top|A3                                                ; |Lab3top|A3                                                ; pin_out          ;
+; |Lab3top|B0                                                ; |Lab3top|B0                                                ; pin_out          ;
+; |Lab3top|B1                                                ; |Lab3top|B1                                                ; pin_out          ;
+; |Lab3top|B2                                                ; |Lab3top|B2                                                ; pin_out          ;
+; |Lab3top|B3                                                ; |Lab3top|B3                                                ; pin_out          ;
+; |Lab3top|register4bits:inst2|inst3                         ; |Lab3top|register4bits:inst2|inst3                         ; regout           ;
+; |Lab3top|74257:inst8|29                                    ; |Lab3top|74257:inst8|29                                    ; out              ;
+; |Lab3top|74257:inst8|26                                    ; |Lab3top|74257:inst8|26                                    ; out              ;
+; |Lab3top|74257:inst8|22                                    ; |Lab3top|74257:inst8|22                                    ; out              ;
+; |Lab3top|74257:inst8|20                                    ; |Lab3top|74257:inst8|20                                    ; out              ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state0  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state0  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state1  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state1  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state2  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state2  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state3  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state3  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state4  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state4  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state5  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state5  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state6  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state6  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state7  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state7  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state8  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state8  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state9  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state9  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state10 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state10 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state11 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state11 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state15 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state15 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state14 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state14 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state13 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state13 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state12 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state12 ; regout           ;
+; |Lab3top|state4bits:inst7|inst5                            ; |Lab3top|state4bits:inst7|inst5                            ; out0             ;
+; |Lab3top|register4bits:inst1|inst                          ; |Lab3top|register4bits:inst1|inst                          ; regout           ;
+; |Lab3top|register4bits:inst1|inst1                         ; |Lab3top|register4bits:inst1|inst1                         ; regout           ;
++------------------------------------------------------------+------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                   ;
++------------------------------------------------------------+------------------------------------------------------------+------------------+
+; Node Name                                                  ; Output Port Name                                           ; Output Port Type ;
++------------------------------------------------------------+------------------------------------------------------------+------------------+
+; |Lab3top|Z                                                 ; |Lab3top|Z                                                 ; pin_out          ;
+; |Lab3top|S                                                 ; |Lab3top|S                                                 ; pin_out          ;
+; |Lab3top|V                                                 ; |Lab3top|V                                                 ; pin_out          ;
+; |Lab3top|C                                                 ; |Lab3top|C                                                 ; pin_out          ;
+; |Lab3top|C0                                                ; |Lab3top|C0                                                ; pin_out          ;
+; |Lab3top|C1                                                ; |Lab3top|C1                                                ; pin_out          ;
+; |Lab3top|C2                                                ; |Lab3top|C2                                                ; pin_out          ;
+; |Lab3top|C3                                                ; |Lab3top|C3                                                ; pin_out          ;
+; |Lab3top|S0                                                ; |Lab3top|S0                                                ; pin_out          ;
+; |Lab3top|S1                                                ; |Lab3top|S1                                                ; pin_out          ;
+; |Lab3top|S2                                                ; |Lab3top|S2                                                ; pin_out          ;
+; |Lab3top|S3                                                ; |Lab3top|S3                                                ; pin_out          ;
+; |Lab3top|A0                                                ; |Lab3top|A0                                                ; pin_out          ;
+; |Lab3top|A1                                                ; |Lab3top|A1                                                ; pin_out          ;
+; |Lab3top|A2                                                ; |Lab3top|A2                                                ; pin_out          ;
+; |Lab3top|A3                                                ; |Lab3top|A3                                                ; pin_out          ;
+; |Lab3top|B0                                                ; |Lab3top|B0                                                ; pin_out          ;
+; |Lab3top|B1                                                ; |Lab3top|B1                                                ; pin_out          ;
+; |Lab3top|B2                                                ; |Lab3top|B2                                                ; pin_out          ;
+; |Lab3top|B3                                                ; |Lab3top|B3                                                ; pin_out          ;
+; |Lab3top|register4bits:inst2|inst                          ; |Lab3top|register4bits:inst2|inst                          ; regout           ;
+; |Lab3top|register4bits:inst2|inst1                         ; |Lab3top|register4bits:inst2|inst1                         ; regout           ;
+; |Lab3top|register4bits:inst2|inst2                         ; |Lab3top|register4bits:inst2|inst2                         ; regout           ;
+; |Lab3top|register4bits:inst2|inst3                         ; |Lab3top|register4bits:inst2|inst3                         ; regout           ;
+; |Lab3top|74257:inst8|29                                    ; |Lab3top|74257:inst8|29                                    ; out              ;
+; |Lab3top|74257:inst8|26                                    ; |Lab3top|74257:inst8|26                                    ; out              ;
+; |Lab3top|74257:inst8|22                                    ; |Lab3top|74257:inst8|22                                    ; out              ;
+; |Lab3top|74257:inst8|20                                    ; |Lab3top|74257:inst8|20                                    ; out              ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state1  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state1  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state2  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state2  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state3  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state3  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state4  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state4  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state5  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state5  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state6  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state6  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state7  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state7  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state8  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state8  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state9  ; |Lab3top|input_generator_high_freq:inst10|pr_state.state9  ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state10 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state10 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state11 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state11 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state15 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state15 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state14 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state14 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state13 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state13 ; regout           ;
+; |Lab3top|input_generator_high_freq:inst10|pr_state.state12 ; |Lab3top|input_generator_high_freq:inst10|pr_state.state12 ; regout           ;
+; |Lab3top|state4bits:inst7|inst5                            ; |Lab3top|state4bits:inst7|inst5                            ; out0             ;
+; |Lab3top|register4bits:inst1|inst                          ; |Lab3top|register4bits:inst1|inst                          ; regout           ;
+; |Lab3top|register4bits:inst1|inst1                         ; |Lab3top|register4bits:inst1|inst1                         ; regout           ;
++------------------------------------------------------------+------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 03 13:47:39 2021
+Info: Command: quartus_sim --simulation_results_format=VWF Lab3_1 -c Lab3_1_qsim
+Info (324025): Using vector source file "H:/wrash014/QUARTUS CEG2536/Lab 3_1/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      21.67 %
+Info (328052): Number of transitions in simulation is 398
+Info (324045): Vector file Lab3_1_qsim.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 331 megabytes
+    Info: Processing ended: Wed Nov 03 13:47:40 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

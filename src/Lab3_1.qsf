@@ -1,0 +1,61 @@
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY Lab3top
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 15:36:27  October 13, 2021
+#
+
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_E21 -to C
+set_location_assignment PIN_G19 -to C0
+set_location_assignment PIN_F19 -to C1
+set_location_assignment PIN_E19 -to C2
+set_location_assignment PIN_F21 -to C3
+set_location_assignment PIN_Y2 -to CLK
+set_location_assignment PIN_E22 -to S
+set_location_assignment PIN_E24 -to V
+set_location_assignment PIN_E25 -to Z
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "H:/wrash014/QUARTUS CEG2536/Lab 3_1/Waveform1.vwf"
+set_global_assignment -name VHDL_FILE lab3_support_files/input_generator_low_freq.vhd
+set_global_assignment -name VHDL_FILE lab3_support_files/input_generator_high_freq.vhd
+set_global_assignment -name BDF_FILE state4bits.bdf
+set_global_assignment -name BDF_FILE register4bits.bdf
+set_global_assignment -name BDF_FILE logiccircuit4bits.bdf
+set_global_assignment -name BDF_FILE logiccircuit1bit2.bdf
+set_global_assignment -name BDF_FILE logiccircuit1bit.bdf
+set_global_assignment -name BDF_FILE Lab3top.bdf
+set_global_assignment -name BDF_FILE Lab3_1.bdf
+set_global_assignment -name BDF_FILE fulladder1bit.bdf
+set_global_assignment -name BDF_FILE arithcircuit4bits.bdf
+set_global_assignment -name BDF_FILE arithcircuit1bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
